@@ -29,11 +29,12 @@ scotchApp.config(function($routeProvider) {
 scotchApp.controller('mainController', function($scope) {
 
   // create a message to display in our view
+  $scope.main_css = 'app/app.css';
   $scope.message = 'Everyone come and see how good I look!';
 });
 
 
-scotchApp.controller('aboutController', function($scope, $routeParams) {
+scotchApp.controller('videoquizIndexController', function($scope, $routeParams) {
   $scope.message = 'Look! I am an about page.';
 
   $scope.curr_level = $routeParams.lv;
@@ -44,6 +45,6 @@ scotchApp.controller('aboutController', function($scope, $routeParams) {
     
 });
 
-scotchApp.controller('contactController', function($scope) {
+scotchApp.controller('videoquizController', function($scope) {
   $scope.message = 'Contact us! JK. This is just a demo.';
 });
